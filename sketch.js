@@ -1,4 +1,7 @@
 let player, login, game;
+let gameState = 0
+
+var spritePlayer
 
 
 function setup(){
@@ -9,5 +12,16 @@ game.start();
 }
 
 function draw(){
-background("grey");
+     background("grey");
+
+
+     if(gameState === 1){
+          game.historia();
+          
+     }
+
+     if(gameState === 2){
+          game.play()
+     }
+
 }
